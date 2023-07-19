@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Placeholder Link Generator — Fill, Generate and Copy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Placeholder Link Generator — Fill, Generate and Copy" />
+  <meta name="description" content="Placeholder Link Generator is a simple web application that allows users to generate placeholder image links with custom dimensions, background colors, text, text colors, and fonts. It provides a quick and easy way to create placeholder images for use in web development, design, or prototyping." />
+  <meta name="keywords" content="placeholder, link generator, placeholder image, web development, design, prototyping">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dhaifullahr.github.io/placeholder-link-generator/" />
+  <meta property="og:title" content="Placeholder Link Generator — Fill, Generate and Copy" />
+  <meta property="og:description" content="Placeholder Link Generator is a simple web application that allows users to generate placeholder image links with custom dimensions, background colors, text, text colors, and fonts. It provides a quick and easy way to create placeholder images for use in web development, design, or prototyping." />
+  <meta property="og:image" content="img/banner.jpg" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://dhaifullahr.github.io/placeholder-link-generator/" />
+  <meta property="twitter:title" content="Placeholder Link Generator — Fill, Generate and Copy" />
+  <meta property="twitter:description" content="Placeholder Link Generator is a simple web application that allows users to generate placeholder image links with custom dimensions, background colors, text, text colors, and fonts. It provides a quick and easy way to create placeholder images for use in web development, design, or prototyping." />
+  <meta property="twitter:image" content="img/banner.jpg" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Placeholder Link Generator</h1>
+    <div class="card">
+      <div class="card-body">
+        <form onsubmit="generateLink(event)">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="width">Width:</label>
+              <input type="text" class="form-control" id="width" placeholder="Width" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="height">Height:</label>
+              <input type="text" class="form-control" id="height" placeholder="Height">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="format">Format:</label>
+              <select id="format" class="form-control">
+                <option value="svg">SVG</option>
+                <option value="png">PNG</option>
+                <option value="jpg">JPG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="webp">WebP</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="backgroundColor">Background Color:</label>
+              <input type="color" class="form-control" id="backgroundColor" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="textColor">Text Color:</label>
+              <input type="color" class="form-control" id="textColor" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="font">Font:</label>
+              <select id="font" class="form-control">
+                <option value="Lato">Lato</option>
+                <option value="Lora">Lora</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Open+Sans">Open Sans</option>
+                <option value="Oswald">Oswald</option>
+                <option value="Playfair Display">Playfair Display</option>
+                <option value="PT Sans">PT Sans</option>
+                <option value="Raleway">Raleway</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Source Sans Pro">Source Sans Pro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Text:</label>
+            <input type="text" class="form-control" id="text" placeholder="Add your text here">
+          </div>
+          <input type="submit" class="btn btn-primary" value="Generate Link">
+        </form>
+      </div>
+    </div>
+      <h2>Result Goes Here</h2>
+    <div id="output" class="mt-4">
+      <!-- Generated link-->
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
