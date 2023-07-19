@@ -2,6 +2,10 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+## Preview
+
+![Preview Page](https://raw.githubusercontent.com/dhaifullahr/placeholder-link-generator/master/img/Screenshoot%20Preview%20Page%20Desktop.jpg)
+
 ## Description
 
 Placeholder Link Generator is a simple web application that allows users to generate placeholder image links with custom dimensions, background colors, text, text colors, and fonts. It provides a quick and easy way to create placeholder images for use in web development, design, or prototyping.
